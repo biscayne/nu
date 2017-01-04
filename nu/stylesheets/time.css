@@ -1,0 +1,100 @@
+html {
+  font-size: 24px; /* was 16 */
+}
+
+body {
+  background: #28536C;
+  color: #6F8FA2;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+a:visited {
+  color: #A98B38;
+}
+
+header,
+section {
+  text-align: left;
+}
+
+ol > li,
+dl > dt,
+dl > dd {
+  margin-bottom: .5rem;
+}
+
+footer {
+  font-size: .9rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 65%;
+}
+
+#year {
+  overflow: hidden;
+  padding: 8rem 5rem;
+  position: relative;
+}
+
+#year::after {
+  color: #CCCCCC; /* was 477187 */
+  content: attr(data-bg-text);
+  display: block;
+  font-size: 15rem;
+  line-height: 1;
+  opacity: .2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+#date_time {
+  color: #DDDDDD;
+  font-size: 4rem;
+  margin-top: -16rem;
+}
+
+#date_time > p {
+  margin: 0 0 1rem;
+}
+
+#loaded_date {
+  font-size: 1rem;
+}
+
+#loaded_date span {
+  display: block;
+}
+
+/* media queries */
+@media (max-width: 400px) {
+  html { font-size: 15px; }
+  
+  body {
+    background: #802B66;
+    color: #40002D;
+  }
+
+  .wrapper {
+    width: 95%;
+  }
+
+  #year {
+    padding: 4rem 3rem;
+  }
+  #year::after {
+    color: #F180AD; /*was C180AD */
+    font-size: 8rem;
+  }
+
+  #date_time {
+    font-size: 3rem;
+    margin-top: -8rem;
+  }
+}
